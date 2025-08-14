@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <div class="contain-header">
+            <div class="menu">
+                <a href="#"><img src="img/love_15118419.png" class="corazon"></a>
+            </div>
+        </div>
+        </header>
+                <button id="boton">Haz clic aquí</button>
+                <div id="mensaje">🎉 ¡Feliz día! 🎉</div>
+
+
+    <iframe id="video" width="0" height="0"
+        src="https://www.youtube.com/embed/RD6jqcAYrifG8?autoplay=1"
+        allow="autoplay">
+    </iframe>
+
+    <script>
+        const boton = document.getElementById("boton");
+        const mensaje = document.getElementById("mensaje");
+        const video = document.getElementById("video");
+
+        boton.addEventListener("click", () => {
+            boton.style.display = "none";
+            mensaje.classList.add("mostrar");
+            video.style.display = "block";
+        });
+    </script>
+    </body>
+</html>
